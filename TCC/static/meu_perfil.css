@@ -1,0 +1,186 @@
+/* Reset Padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 1px solid #935DD3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F6F5ED;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #B49BD2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    font-family: "Italiana";
+}
+
+.logo img {
+    max-width: 40px;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Botão de sair */
+.search-login {
+    display: flex;
+    align-items: center;
+}
+
+.search-login input {
+    padding: 5px 15px;
+    font-family: "Poppins";
+}
+
+.search-login button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: white;
+    color: #B49BD2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-login button:hover {
+    background-color: #935DD3;
+    color: white;
+}
+
+/* Estilização da Página do Perfil */
+.perfil-container {
+    width: 50%;
+    background-color: white;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.perfil-container h1 {
+    color: #935DD3;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Foto de Perfil */
+.foto-perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #B49BD2;
+    margin-bottom: 15px;
+}
+
+/* Campos do Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #B49BD2;
+    text-align: left;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid #B49BD2;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #935DD3;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+input[readonly] {
+    background-color: #F6F5ED;
+    cursor: not-allowed;
+}
+
+/* Botão Editar */
+button {
+    padding: 10px 20px;
+    background-color: #B49BD2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #935DD3;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .perfil-container {
+        width: 80%;
+    }
+
+    input {
+        width: 90%;
+    }
+}
