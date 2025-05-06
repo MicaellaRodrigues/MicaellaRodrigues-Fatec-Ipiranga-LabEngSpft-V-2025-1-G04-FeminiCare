@@ -1,0 +1,268 @@
+*:focus {
+    outline: 1px solid #935DD3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F5ED;
+    margin: 0;
+}
+
+header {
+    background-color: #B49BD2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* IMAGEM DA LOGO */
+img {
+    max-width: 10%;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid #F6F5ED;
+    border-radius: 50px;
+    color: #F6F5ED;
+}
+
+input::placeholder {
+    color: #F6F5ED;
+    float: left;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    font-family: "Italiana";
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-login input {
+    padding: 5px 15px;
+    font-family: "Poppins";
+}
+
+.search-login button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: #F6F5ED;
+    color: #B49BD2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-login button:hover{
+    color: #F6F5ED;
+    background-color: #935DD3;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.reset-password-container {
+    text-align: center;
+    padding: 10vh;
+    border: 1px solid #B49BD2;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.reset-password-container h1 {
+    color: #B49BD2;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: bold;
+}
+
+.reset-password-container p {
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #B49BD2;
+}
+
+.reset-password-container input {
+    padding: 5px 15px;
+    border-radius: 50px;
+    border: 2px solid #B49BD2;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+    color: #B49BD2;
+    font-size: 12px;
+}
+
+.reset-password-container input::placeholder {
+    font-family: "Poppins";
+    font-size: 12px;
+    color:#B49BD2;
+    text-transform: uppercase;
+}
+
+.reset-password-container button {
+    padding: 10px 20px;
+    background-color: #B49BD2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.reset-password-container button:hover {
+    color: #F6F5ED;
+    background-color: #935DD3;
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+    border-right: 2px solid #F6F5ED;
+    margin-right: 15px;
+}
+
+.button-list li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    font-family: "Poppins";
+    font-size: 14px;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: 2px solid #F6F5ED;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .button{
+        border: none;
+    }
+
+    .button-list {
+        border-right: none;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .button-list li {
+        margin-bottom: 10px;
+        border: none;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .search-login {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-login input {
+        width: 50%;
+        align-items: start;
+    }
+
+    .search-login button {
+        width: 25%;
+    }
+
+    .reset-password-container {
+        padding: 5vh;
+        width: 70%;
+    }
+
+    .reset-password-container h1 {
+        font-size: 24px;
+    }
+
+    .reset-password-container p {
+        font-size: 12px;
+    }
+
+    .reset-password-container input {
+        width: 90%;
+    }
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 50px;
+}
+

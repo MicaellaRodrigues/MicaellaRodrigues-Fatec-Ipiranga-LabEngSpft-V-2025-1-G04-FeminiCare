@@ -1,0 +1,13 @@
+.image-container {
+    width: 100%;
+    max-width: 900px; /* Ajuste para o tamanho máximo desejado */
+    margin: auto; /* Centraliza a imagem */
+    overflow: hidden; /* Garante que as bordas arredondadas funcionem corretamente */
+}
+
+.styled-image {
+    width: 100%; /* Garantir que a imagem ocupe toda a largura disponível */
+    height: auto; /* Mantém a proporção correta da imagem */
+    border-radius: 20px; /* Borda arredondada */
+    object-fit: cover; /* Ajusta a imagem para que cubra todo o espaço sem distorcer */
+}

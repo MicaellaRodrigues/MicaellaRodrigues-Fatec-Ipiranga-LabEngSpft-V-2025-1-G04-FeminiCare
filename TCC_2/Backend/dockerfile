@@ -1,0 +1,28 @@
+# Usa uma imagem base Python slim
+FROM python:3.9-slim
+
+# Define o diretório de trabalho
+WORKDIR /app
+
+# 1. Instala as dependências de sistema ESSENCIAIS (sem alterar sua estrutura)
+RUN apt-get update && \
+    apt-get install -y \
+    default-libmysqlclient-dev \
+    gcc \
+    pkg-config \
+    && rm -rf /var/lib/apt/lists/*
+
+# 2. Copia os arquivos necessários
+COPY requirements.txt .
+COPY app.py .
+COPY templates/ templates/
+
+# 3. Instala apenas as dependências Python que você já usa
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 4. Mantém todas suas configurações originais
+ENV FLASK_APP=app.py
+EXPOSE 5000
+
+# 5. Comando original que você já usa
+CMD ["flask", "run", "--host=0.0.0.0"]

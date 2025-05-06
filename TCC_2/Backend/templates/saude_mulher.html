@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Feminicare | Saúde da Mulher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='saude_mulher.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+          FeminiCare
+          <img src="{{ url_for('static', filename='img/Daisy.svg') }}" alt="Daisy">
+        </div>
+        <nav>
+          <ul class="button-list">
+            <li><a href="{{ url_for('index') }}" class="button">Início</a></li>
+            <li><a href="{{ url_for('sobre_nos') }}" class="button">Sobre nós</a></li>
+            <li><a href="{{ url_for('saude_mulher') }}" class="button">Saúde da Mulher</a></li>
+          </ul>
+          <div class="search-login">
+            <input type="text" placeholder="BUSCAR">
+            {% if session.get('usuario_id') %}
+              <a href="{{ url_for('meu_perfil') }}"><button>MEU PERFIL</button></a>
+            {% else %}
+              <button>MEU PERFIL</button>
+            {% endif %}
+          </div>
+        </nav>
+      </header>
+
+      <!--titulo-->
+      <main class="container">
+  <div class="titulo-cards esquerda">
+    <h2>Selecione o período ou fase  em que você está:</h2>
+  </div>
+           
+
+        <!--cards-->
+        <div class="card">
+          <div class="card__img" style="background-image: url('{{url_for('static', filename='img/puberdade-min.png') }}')"></div>
+          <div class="card__body">
+            <h3 class="card__title">Puberdade</h3>
+            <p class="card__text">8–18 anos 
+              <!-- <br>Adolescência --></p>
+            <a href="{{ url_for('tela_puberdade') }}" class="card__btn">Saiba mais</a>
+          </div>
+
+        </div>
+        <div class="card">
+          <div class="card__img" style="background-image: url('{{url_for('static', filename='img/reprodutiva-min.png') }}')"></div>
+          <div class="card__body">
+            <h3 class="card__title">Reprodutiva</h3>
+            <p class="card__text">12–39 anos
+              <!-- <br>Menarca · Menacme< -->
+            </p>
+            <a href="{{ url_for('tela_reprodutiva') }}" class="card__btn">Saiba mais</a>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card__img" style="background-image: url('{{url_for('static', filename='img/menopausa-min.png') }}')"></div>
+          <div class="card__body">
+            <h3 class="card__title">Menopausa</h3>
+            <p class="card__text">40+ anos
+            <!-- <br>Climatério · Pós-Menopausa -->
+            </p>
+            <a href="{{ url_for('tela_menopausa') }}" class="card__btn">Saiba mais</a>
+          </div>
+        </div>
+      
+</body>
+</html>

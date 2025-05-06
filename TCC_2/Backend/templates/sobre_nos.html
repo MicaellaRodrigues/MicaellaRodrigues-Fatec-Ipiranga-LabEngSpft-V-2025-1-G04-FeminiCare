@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Carrega o CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='sobre_nos.css') }}">
+    <title>FeminiCare | Puberdade</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            FeminiCare
+            <img src="{{ url_for('static', filename='img/Daisy.svg') }}" alt="Daisy">
+        </div>
+        <nav>
+            <ul class="button-list">
+                <li><a href="{{ url_for('index') }}" class="button">Início</a></li>
+                <li><a href="{{ url_for('sobre_nos') }}" class="button">Sobre nós</a></li>
+                <li><a href="{{ url_for('saude_mulher') }}" class="button">Saúde da Mulher</a></li>
+            </ul>
+            <div class="search-login">
+                <input type="text" placeholder="BUSCAR">
+                <button>MEU PERFIL</button>
+            </div>
+        </nav>
+    </header>
+</head>
+<body>
+
+<!--conteudo sobre nos-->
+<main class="sobre-nos-container">
+    <img src="{{ url_for('static', filename='img/flor (1).png') }}" alt="Flor decorativa" class="imagem-lateral"/>
+    <div class="sobre-nos-box">
+      <h1>Sobre Nós</h1>
+      <p>
+        Criamos este site com o propósito de oferecer um espaço seguro e confiável para você explorar tudo sobre o ciclo menstrual e as diferentes fases da vida da mulher. Aqui, você encontrará uma ampla gama de conteúdos cuidadosamente elaborados, desde informações básicas sobre a menstruação até detalhes mais aprofundados sobre a saúde reprodutiva e emocional das mulheres.
+      </p>
+      <p>
+        Nosso objetivo é garantir que todas as garotas tenham acesso a informações claras e cientificamente embasadas, para que possam entender melhor o que acontece com seus corpos em cada etapa da vida. Queremos que este seja um espaço onde você se sinta acolhida e possa tirar todas as suas dúvidas sem hesitação, contribuindo para uma jornada mais informada e tranquila.
+      </p>
+      <p class="encerramento">Aproveitem, meninas :)</p>
+    </div>
+  </main>
+
+</body>
+</html>

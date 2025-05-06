@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Carrega o CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='esqueci_senha.css') }}">
+    <title>FeminiCare | Puberdade</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            FeminiCare
+            <img src="{{ url_for('static', filename='img/Daisy.svg') }}" alt="Daisy">
+        </div>
+        <nav>
+            <ul class="button-list">
+                <li><a href="{{ url_for('index') }}" class="button">Início</a></li>
+                <li><a href="{{ url_for('sobre_nos') }}" class="button">Sobre nós</a></li>
+                <li><a href="{{ url_for('saude_mulher') }}" class="button">Saúde da Mulher</a></li>
+            </ul>
+            <div class="search-login">
+                <input type="text" placeholder="BUSCAR">
+                <button>MEU PERFIL</button>
+            </div>
+        </nav>
+    </header>
+
+<!--conteudo puberdade-->
+    <main>
+
+        <div style="width: 100%; max-width: 900px; margin: auto;">
+            <br><br><br><img src="{{ url_for('static', filename='img/puberdade-min.png') }}" alt="Imagem Puberdade" style="width: 100%; border-radius: 20px;">
+          
+            <section style="padding: 20px;">
+                <p style="text-align: right; font-style: italic; color: #935DD3; font-size: 14px;">8 - 18 anos</p>
+                <h2 style="color: #935DD3; font-family: Poppins, sans-serif; font-weight: bold;">Puberdade</h2>
+                
+                <p style="font-size: 14px; font-family: Poppins, sans-serif; color:gray">
+                    Se você está suando sem motivo, brigando com o espelho e de repente ficou alérgico à sua família… bem-vindo à puberdade! Essa fase da vida é tipo uma montanha-russa que a gente não escolheu subir, mas que TODO MUNDO passa — e, acredite ou não, ela serve pra transformar você num adulto incrível (mesmo que pareça meio caótico agora).
+                 </p>
+    
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    <strong>O que é a puberdade, afinal?</strong> É o nome chique pra dizer que seu corpo está virando adulto. Os hormônios — tipo mensageiros internos — começam a trabalhar como se não houvesse amanhã. Resultado? Seu corpo, sua mente e suas emoções entram em modo turbo.
+                </p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    <strong>Mudanças à vista!</strong>
+                    <br>● Crescimento acelerado (aquele estirão que faz a calça de ontem virar bermuda hoje);
+                    <br>● Surgimento de pelos (em lugares que você nem imaginava);                   
+                    <br>● Suor com “personalidade” (o famoso cheirinho da puberdade);                   
+                    <br>● Voz mudando (e sim, ela pode falhar no meio de uma frase no meio da aula);                    
+                    <br>● Espinhas aparecendo (e querendo ser protagonistas no seu rosto);                  
+                    <br>● Coração que dispara, crushes que surgem, vergonha que triplica.
+                </p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    Mas calma, tudo isso é NORMAL. Todo mundo passa por isso. Uns mais cedo, outros mais tarde. E tá tudo bem!
+                </p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    
+                    <strong>Como sobreviver à puberdade sem perder o bom humor?</strong>
+                    <br><strong>● Tenha paciência com você mesmo.</strong>Você não tá “estranho”, tá em transformação.
+                    <br><strong>● Cuide da higiene.</strong> Banho, desodorante e lavar o rosto viram aliados de peso!
+                    <br><strong>● Alimente-se bem.</strong>Chocolate é vida, mas frutas e verduras também ajudam seu corpo a lidar com tudo isso.
+                    <br><strong>● Durma.</strong>O sono é tipo o Wi-Fi do corpo: quando tá bom, tudo funciona melhor.
+                    <br><strong>● Converse.</strong>Pode ser com os pais, professores, amigos ou alguém de confiança. Falar ajuda MUITO!
+                </p>
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                <strong>E o lado emocional?</strong>
+                Você pode se sentir confuso, sensível ou até meio perdido. É normal. Seu cérebro também está crescendo e aprendendo a lidar com um mundo novo. Não precisa saber tudo agora — só precisa lembrar que você não está sozinho.               
+               
+            </section>
+        </div>
+    </main>
+    
+    </body>
+    </html>

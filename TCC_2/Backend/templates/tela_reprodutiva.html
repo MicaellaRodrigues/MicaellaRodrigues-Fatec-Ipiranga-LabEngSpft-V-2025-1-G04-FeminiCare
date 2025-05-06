@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome (opcional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Carrega o CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='tela_reprodutiva.css') }}">
+    <title>FeminiCare | Reprodutiva</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            FeminiCare
+            <img src="{{ url_for('static', filename='img/Daisy.svg') }}" alt="Daisy">
+        </div>
+        <nav>
+            <ul class="button-list">
+                <li><a href="{{ url_for('index') }}" class="button">Início</a></li>
+                <li><a href="{{ url_for('sobre_nos') }}" class="button">Sobre nós</a></li>
+                <li><a href="{{ url_for('saude_mulher') }}" class="button">Saúde da Mulher</a></li>
+            </ul>
+            <div class="search-login">
+                <input type="text" placeholder="BUSCAR">
+                <button>MEU PERFIL</button>
+            </div>
+        </nav>
+    </header>
+
+<!--conteudo reprodutiva-->
+    <main>
+        <!-- BUMA: <div class="head-img">
+            <img src="{{ url_for('static', filename='img/reprodutiva-min.png') }}" alt="Imagem Reprodutiva">
+            </div> -->
+        <div style="width: 100%; max-width: 900px; margin: auto;">
+                <img src="{{ url_for('static', filename='img/reprodutiva-min.png') }}" alt="Imagem Reprodutiva" style="width: 100%; border-radius: 20px;">
+     
+
+            <section style="padding: 20px;">
+                <p style="text-align: right; font-style: italic; color: #935DD3; font-size: 14px;">12 - 39 anos</p>
+                <h2 style="color: #935DD3; font-family: Poppins, sans-serif; font-weight: bold;">Reprodutiva</h2>
+                
+                <p style="font-size: 14px; font-family: Poppins, sans-serif; color:gray">
+                    Entre a primeira menstruação (a famosa menarca) e a chegada da menopausa, existe uma fase poderosa, cheia de altos, baixos e reviravoltas internas: a fase reprodutiva. Mas calma, não é porque o corpo pode engravidar que essa é a única missão da fase — longe disso! Esse período é sobre saúde, autoconhecimento e liberdade de escolha.
+                </p>
+    
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    <strong>Quando começa e quando termina?</strong>A fase reprodutiva começa, com a chegada da menstruação, e vai até quando a menopausa dá o ar da graça. Durante esse tempo, o corpo da mulher passa por ciclos mensais — alguns tranquilos, outros mais rebeldes — mas todos com um propósito biológico incrível.</p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    <strong>Algumas mudanças...</strong>
+                    <br>● Ovulação: todo mês, um óvulo é liberado — o famoso “dia fértil”.
+                    <br>● O Ciclo menstrual: é a dança dos hormônios (estrogênio e progesterona) preparando tudo pra uma possível gravidez.                  
+                    <br>● Menstruação: quando não há fecundação, o útero “desmonta” o ninho e expulsa o sangue.                   
+                    <br>● Alterações físicas e emocionais: TPM, mudanças de humor, inchaços, sensibilidade... tudo isso pode fazer parte do pacote.
+                </p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    <strong>Mas e se eu não quiser ter filhos?</strong> problema nenhum! A fase reprodutiva não é sinônimo de maternidade obrigatória. É apenas um sinal de que seu corpo está funcionando de forma fértil. Você pode usar esse tempo pra focar em você, no seu bem-estar, na carreira, nos sonhos. Maternidade é uma possibilidade, não um destino obrigatório.
+                </p>
+
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                    
+                    <strong>Dicas pra viver bem essa fase:</strong>
+                    <br><strong>● Acompanhe seu ciclo: </strong>Você não tá “estranho”, tá em transformação.
+                    <br><strong>● Previna-se:</strong> se tiver vida sexual ativa, use métodos contraceptivos e cuide da saúde íntima.
+                    <br><strong>● Visite a ginecologista com regularidade:</strong>exames de rotina são essenciais.
+                    <br><strong>● Alimente-se bem e mexa o corpo:</strong>isso faz maravilhas para os hormônios!
+                    <br><strong>● Se permita descansar:</strong>não se cobre tanto nos dias difíceis do ciclo. O corpo fala — e merece escuta.
+                </p>
+                <p style="font-size: 14px; font-family: Poppins, sans-serif;color:gray"">
+                <strong>No fim das contas...</strong>
+                    A fase reprodutiva é um capítulo potente da vida feminina. É cheia de curvas, sim, mas também de descobertas, aprendizados e muita força. É a fase do florescer consciente: onde cada mulher pode se conectar com seu corpo de um jeito único e, principalmente, fazer suas próprias escolhas.
+
+                    Porque ser mulher é viver uma montanha-russa hormonal com estilo e coragem. E, cá entre nós, a gente dá conta — com sangue, suor e sabedoria.
+            </section>
+        </div>
+    </main>
+    
+    </body>
+    </html>

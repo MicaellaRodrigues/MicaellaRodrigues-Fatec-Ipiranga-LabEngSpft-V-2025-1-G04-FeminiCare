@@ -1,0 +1,389 @@
+.head-img {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+  display: block;
+  }
+  
+  .head-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  *:focus {
+    outline: 1px solid #935DD3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F5ED;
+    margin: 0;
+}
+/* -----------------------------------------HEADER----------------------------------------- */
+header {
+    background-color: #B49BD2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* IMAGEM DA LOGO */
+img {
+    max-width: 10%;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid #F6F5ED;
+    border-radius: 50px;
+    color: #F6F5ED;
+}
+
+input::placeholder {
+    color: #F6F5ED;
+    float: left;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+    font-family: "Italiana";
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6c63ff;
+}
+
+.search-login {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-login input {
+    padding: 5px 15px;
+    font-family: "Poppins";
+}
+
+.search-login input:focus {
+    border-color: #B49BD2 !important;
+}
+
+.search-login button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: #F6F5ED;
+    color: #B49BD2;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-login button:hover {
+    color: #F6F5ED;
+    background-color: #935DD3;
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+    border-right: 2px solid #F6F5ED;
+    margin-right: 15px;
+}
+
+.button-list li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    font-family: "Poppins";
+    font-size: 14px;
+    padding: 5px 15px;
+    text-decoration: none;
+    border: 2px solid #F6F5ED;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+/* -----------------------------------------HEADER----------------------------------------- */
+/* -----------------------------------------MAIN----------------------------------------- */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    height: 80vh;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 7%;
+}
+.vl {
+    border-left: 3px solid #B49BD2;
+    border-radius: 50px;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 20%;
+  }
+.login {
+    display: inline-block;
+    background-color: #B49BD2;
+    border: transparent;
+    border-radius: 20px;
+    padding: 20px 40px 50px 40px;
+    width: 30%;
+}
+
+.login h2 {
+    color: #F6F5ED;
+    font-family: "Poppins";
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    font-size: 32px;
+}
+
+.login label {
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #F6F5ED;
+}
+
+.login input {
+    background-color: #F6F5ED;
+    border: transparent;
+    color: #B49BD2;
+    font-family: "Poppins";
+    font-size: 14px;
+    text-align: center;
+}
+
+.login button {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    background-color: #F6F5ED;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    color: #B49BD2;
+    border: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    color: #F6F5ED;
+    background-color: #935DD3;
+}
+
+.cadastro {
+    text-align: center;
+    padding: 20px 40px 50px 40px;
+    border: 2px solid #B49BD2;
+    border-radius: 10px;
+    width: 30%;
+    background-color: white;
+}
+
+.cadastro h2 {
+    color: #B49BD2;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;
+    text-align: left;
+}
+
+.cadastro label{
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #B49BD2;
+    text-align: left;
+}
+
+.cadastro input{
+    border: 2px solid #B49BD2;
+    font-family: "Poppins";
+    font-size: 14px;
+    color: #B49BD2;
+    text-align: center;
+}
+
+.cadastro button {
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B49BD2;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    color: #F6F5ED;
+    border: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.cadastro button:hover {
+    color: #F6F5ED;
+    background-color: #935DD3;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+
+button:hover {
+    background-color: #5a53e3;
+}
+
+a {
+    text-align: center;
+    margin-top: 10px;
+    color: #935DD3;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+
+.cadastro-caixa {
+    width: 300px; /* Largura ajustada */
+    padding: 20px; /* Reduzir o preenchimento interno */
+    margin: auto; /* Centralizar na página */
+    border: 1px solid #d3d3d3; /* Borda para destacar */
+    border-radius: 10px; /* Cantos arredondados */
+    background-color: #f9f9f9; /* Cor de fundo suave */
+}
+/* -----------------------------------------MAIN----------------------------------------- */
+
+/* -----------------------------------------MEDIA QUERY PARA MOBILE----------------------------------------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .button {
+        border: none;
+    }
+
+    .button-list {
+        border-right: none;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    .button-list li {
+        margin-bottom: 10px;
+        border: none;
+        display: inline-block;
+        margin: 0;
+    }
+
+    .search-login {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .search-login input {
+        width: 50%;
+        align-items: start;
+    }
+
+    .search-login button {
+        width: 25%;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 50px;
+    }
+
+    .vl {
+        display: none; /* Linha vertical */
+    }
+
+    .login, .cadastro {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .login h2, .cadastro h2 {
+        font-size: 24px;
+    }
+
+    .login label, .cadastro label {
+        font-size: 12px;
+    }
+
+    .login input, .cadastro input {
+        width: 100%;
+    }
+
+    .login button, .cadastro button {
+        width: 100%;
+    }
+}

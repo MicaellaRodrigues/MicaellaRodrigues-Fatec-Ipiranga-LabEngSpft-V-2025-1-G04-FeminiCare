@@ -1,0 +1,73 @@
+.card {
+  background-color: #C69BD3;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+}
+
+/* imagem como background no topo */
+.card__img {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+.card__body {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card__title {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card__text {
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.card__btn {
+  background-color: #ffffff;
+  color: #A167AD;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.card__btn:hover {
+  background-color: #e8d8ef;
+}
+
+.titulo-cards {
+  margin-bottom: 32px;
+}
+
+.titulo-cards.esquerda {
+  text-align: left;
+}
+
+.titulo-cards h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #5B2E7E;
+  margin: 0;
+}
+

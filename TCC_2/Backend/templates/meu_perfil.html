@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ícones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Arquivo de Estilo -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='meu_perfil.css') }}">
+
+    <title>FeminiCare | Meu Perfil</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">FeminiCare 
+            <img src="{{ url_for('static', filename='img/Daisy.svg') }}" alt="Logo FeminiCare">
+        </div>
+        <nav>
+            <ul class="button-list">
+                <li><a href="{{ url_for('tela_menopausa') }}" class="button">Início</a></li>
+                <li><a href="{{ url_for('sobre_nos') }}" class="button">Sobre nós</a></li>
+                <li><a href="{{ url_for('saude_mulher') }}" class="button">Saúde da Mulher</a></li>
+            </ul>
+            <div class="search-login">
+                <input type="text" placeholder="BUSCAR">
+                <a href="{{ url_for('logout') }}"><button>SAIR</button></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Corpo da Página -->
+    <main>
+        <div class="perfil-container">
+            <h1>Dados do Perfil</h1>
+
+            <!-- Foto de Perfil -->
+            <div class="foto-perfil">
+                <img src="{{ url_for('static', filename='img/Vollei-217.jpg') }}" alt="Vollei-217.jpg">
+            </div>
+
+            <!-- Formulário de Dados -->
+            <form action="#" method="POST">
+                <label>Nome:</label>
+                <input type="text" name="nome" value="{{ nome }}" readonly> 
+
+                <label>Email:</label>
+                <input type="email" name="email" value="{{ email }}" readonly> 
+
+                <label>Telefone:</label>
+                <input type="tel" name="telefone" value="{{ telefone }}" readonly> 
+
+                <label>Número da Credencial:</label>
+                <input type="text" name="numeroCred" value="{{ numeroCred }}" readonly> 
+
+                <label>Especialidade:</label>
+                <input type="text" name="especialidade" value="{{ especialidade }}" readonly> 
+
+                <label>Local do Consultório:</label>
+                <input type="text" name="local" placeholder="Itaim Bibi, 58" readonly>
+
+                <label>Senha:</label>
+                <input type="password" value="**********" readonly> 
+
+                <button type="button" onclick="habilitarEdicao()">EDITAR</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Script para Habilitar Edição -->
+    <script>
+        function habilitarEdicao() {
+            let inputs = document.querySelectorAll('input');
+            inputs.forEach(input => {
+                if (input.name !== "email") {  // O email não pode ser editado
+                    input.removeAttribute('readonly');
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
